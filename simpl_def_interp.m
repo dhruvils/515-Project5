@@ -1,9 +1,9 @@
 function [trans] = simpl_def_interp(A, B)
-lA = matlog(A);
-lB = matlog(B);%matlog(B);
+lA = logm(A)
+lB = logm(B)
 
-simA = to_sim(lA);
-simB = to_sim(lB);
+simA = to_sim(lA)
+simB = to_sim(lB)
 
 T = 10;
 trans = cell(T,1);
